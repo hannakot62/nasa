@@ -1,12 +1,13 @@
 import './App.css'
+import Wrapper from "./components/Wrapper/Wrapper.jsx";
 
 function App() {
 
-  return (
-    <>
-        fff
-    </>
-  )
+    return (
+        <>
+            <Wrapper/>
+        </>
+    )
 }
 
 export default App

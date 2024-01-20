@@ -1,0 +1,45 @@
+.wrapper{
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 20px;
+}
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+.wrapper h1{
+    font-family: Arial, sans-serif;
+    font-weight: 800;
+    font-size: 10vh;
+    color: white;
+    text-shadow: 2px 0px 3px rgba(0,0,0,1);
+    word-break: break-word;
+    margin: 0;
+    animation: float 2s ease-in-out infinite;
+
+}
+
+.wrapper span{
+    font-size: 3vh;
+}
+
+@media (max-width: 510px) {
+    .wrapper h1{
+        font-size: 10vw;
+    }
+    .wrapper span{
+        font-size: 3vw;
+    }
+}
