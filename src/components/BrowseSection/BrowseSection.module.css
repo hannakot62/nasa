@@ -1,0 +1,60 @@
+.wrapper{
+    background-color: black;
+    color: white;
+    padding: 0 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url("/space.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+.wrapper h1{
+    font-weight: 800;
+    text-shadow: 2px 0px 2px rgba(0,0,0,1);
+    animation: float 2s ease-in-out infinite;
+    font-size: 3rem;
+    word-break: break-word;
+}
+.wrapper button{
+    background-color: navy;
+    color: white;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+    padding: 7px 15px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 2px 6px 7px 2px rgba(0,0,0,0.9);
+    -webkit-box-shadow: 2px 6px 7px 2px rgba(0,0,0,0.9);
+    -moz-box-shadow: 1px 6px 7px 2px rgba(0,0,0,0.9);
+}
+
+.wrapper button:hover {
+    background-color: #040431;
+    transition: 0.3s ease-in;
+}
+
+@media (max-width: 400px) {
+    .wrapper{
+        padding: 0 5px;
+    }
+    .wrapper h1{
+        font-size: 1rem;
+    }
+}

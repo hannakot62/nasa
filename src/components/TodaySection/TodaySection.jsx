@@ -4,14 +4,13 @@ import style from './TodaySection.module.css'
 
 export default function TodaySection() {
     const [pictureSrc, setPictureSrc] = useState('/temp.webp');
-    // useEffect(() => {
-    //     fetch(`https://api.nasa.gov/planetary/apod?api_key=${import.meta.env.VITE_NASA_API_KEY}`)
-    //         .then(response => response.json())
-    //         .then(json => {
-    //         console.log(json)
-    //         setPictureSrc(json.hdurl)
-    //     })
-    // }, []);
+    useEffect(() => {
+        fetch(`https://api.nasa.gov/planetary/apod?api_key=${import.meta.env.VITE_NASA_API_KEY}`)
+            .then(response => response.json())
+            .then(json => {
+                setPictureSrc(json.hdurl)
+            }).catch(err => console.log(err))
+    }, []);
 
 
     return (
