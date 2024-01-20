@@ -32,7 +32,7 @@ Add your API key to the .env file:
 
    ```bash
    npm run dev
-Visit http://localhost:3000 in your browser to explore the APOD images.
+Visit http://localhost:5173 in your browser to explore the APOD images.
 
 ## Scripts
 
